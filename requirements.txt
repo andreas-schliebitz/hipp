@@ -1,0 +1,14 @@
+-e .
+numpy
+opencv-contrib-python
+requests
+spectral
+numba
+joblib
+scipy
+tifffile
+scikit-learn
+scikit-image
+statsmodels
+zstandard
+lz4
