@@ -53,7 +53,7 @@ In order to run your own HIPP code inside of Docker, simply change the `ENTRYPOI
 
 ## License
 
-The code in this repository is released unter the Creative Commons CC BY 4.0 License. See [LICENSE](./LICENSE) for additional details.
+The code in this repository is released under the Creative Commons CC BY 4.0 License. See [LICENSE](./LICENSE) for additional details.
 
 ## Citing HIPP
 
