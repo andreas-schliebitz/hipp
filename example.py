@@ -49,13 +49,13 @@ from hipp.dimensionality_reduction.spatial_binning import SpatialBinning
 if __name__ == "__main__":
     # Load hypercube using ENVI header file
     data, envi_header = load_envi("data/example/hypercube.hdr")
-    
+
     # Instantiate empty processing pipeline
     pipeline = Pipeline()
 
     # Background removal
     pipeline.add(OtsuThresholding())
-    
+
     # Dead pixel removal
     pipeline.add(StandardDeviationThreshold())
 
@@ -67,18 +67,18 @@ if __name__ == "__main__":
 
     # Noise reduction
     pipeline.add(MinimumNoiseFractionTransform())
-    
+
     # Scatter correction
     pipeline.add(StandardNormalVariate())
-    
+
     # Dimensionality reduction (use with care)
     # pipeline.add(PrincipalComponents())
-    
+
     # Execute the preprocessing pipeline
-    preprocessed_data = pipeline.run(data)
+    preprocessed_data, data_mask = pipeline.run(data)
 
     # Image processing: May start with data normalization
     preprocessed_data = normalize(preprocessed_data)
-    
+
     # Visualize first preprocessed spectral band
-    imshow(preprocessed_data[..., 0])
+    # imshow(preprocessed_data[..., 0])

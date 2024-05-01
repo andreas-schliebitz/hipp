@@ -1,8 +1,4 @@
 # Custom
-*.swp
-*.swo
-*.yml.gz
-*.yml
 .vscode/
 
 # Byte-compiled / optimized / DLL files
