@@ -4,7 +4,7 @@ This repository contains the Python code used for creating hyperspectral preproc
 
 > [Preprocessing Ground-Based Hyperspectral Image Data for Improving CNN-based Classification](https://ceur-ws.org/Vol-3630/LWDA2023-paper35.pdf)
 
-by Andreas Schliebitz et al. For citing this work, please se [Citing HIPP](#citing-hipp).
+by Andreas Schliebitz et al. For citing this work, please see [Citing HIPP](#citing-hipp).
 
 ## Installation
 
